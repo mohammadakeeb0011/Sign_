@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    animation: rgbOutline 5s infinite;
+    width: 60%;
+}
+
+@keyframes rgbOutline {
+    0% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+    33% { box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); }
+    66% { box-shadow: 0 0 10px rgba(0, 0, 255, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+    flex: 1;
+    margin-right: 10px;
+    padding-right: 2rem;
+}
+
+.input-group:last-child {
+    margin-right: 0;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.input-group .toggle-password {
+    right: 10px;
+    left: auto;
+    cursor: pointer;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.or-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.or {
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+.line {
+    height: 1px;
+    width: 45%;
+    background: linear-gradient(90deg, rgba(255,0,0,0.8), rgba(0,255,0,0.8), rgba(0,0,255,0.8));
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-login .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-login .btn i {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-group {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}
