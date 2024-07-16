@@ -36,7 +36,7 @@
   <li>Would you like me to include any specific font styles?</li>
 </ul>
 <p>Once I have these details, I'll generate the code for you.</p>
-## Second: Prompt
+<h1>Second: Prompt</h1>
 <ol type="1">
   <li>Yes, it should include the following validation</li>
   <ul>
@@ -52,7 +52,7 @@
   </ul>
   <li>The form outline should be given rgb effect.</li>
   <li>Choose the font that developers prefer the most.</li>
-  ## Third: Prompt
+<h1>Third: Prompt</h1>
   <h3>I want following changes</h3>
   <ul>
     <li>First Name and Last name should be in single row.</li>
